@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import GaugeChart from "react-gauge-chart";
-import "./Dashboard.css";
+import "./App.css";
 import sub from "./images/sub.png";
 import mainlogo from "./images/mainlogo.png";
+import graph from "./images/graph.png";
+import contact from "./images/contact.jpg";
 
 const App = () => {
+  const [showImage, setShowImage] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowImage(true); // Show the image when button is clicked
+  };
   return (
     <div className="dashboard">
       {/* Header */}
@@ -24,9 +31,28 @@ const App = () => {
         <img src={sub} alt="Core Refrigeration" className="core-image" />
         </div>
       </div>
-
+      <div  className="button-container">
+          <button className="button">Home</button>
+          <button className="button">
+          <a href="https://cedar.cesns.ai/dashboard" className="link">Engineering Drawing</a>
+          </button>
+          <button className="button"><a href="https://cedar.cesns.ai/LADConfig"  className="link">Load Analysis</a></button>
+          <button className="button"><a href="https://cedar.cesns.ai/list-of-overlay/131" className="link">Database</a></button>
+          <button className="button"><a href="https://cedar.cesns.ai/reports-dashboard" className="link">Reports</a></button>
+          <button className="button"><a href="https://cedar.cesns.ai/core-explorer"> Upload</a></button>
+          <button className="button">Calendar</button>
+          <button className="button"><a href="https://coldcoregroup.com/contact/"> Contact Us</a></button>
+          {showImage && (
+        <img
+          src="/path/to/your/image.png" // Replace with the path to your image
+          alt="Contact Us"
+          className="contact-image"
+        />
+      )}
+        </div>
       {/* Main Content */}
       <div className="main-content">
+        
         {/* Gauges Section */}
         <div className="gauges-container">
         {/* Engineering Gauge */}
@@ -124,23 +150,15 @@ const App = () => {
       {/* Footer */}
       <div className="footer">
         <div className="inventory">
-          <h1>
+          <h3>
             AMMONIA INVENTORY: <span>127,342 LBS</span> | LAST UPDATED:{" "}
             <span>05/15/2024</span>
-          </h1>
+          </h3>
+          <div className="logo">
+        <img src={graph} width="100%" alt="Core Refrigeration" className="core-image" />
         </div>
-        <div  className="button-container">
-          <button className="button">Home</button>
-          <button className="button">
-          <a href="https://cedar.cesns.ai/dashboard" className="link">Engineering Drawing</a>
-          </button>
-          <button className="button"><a href="https://cedar.cesns.ai/LADConfig"  className="link">Load Analysis</a></button>
-          <button className="button"><a href="https://cedar.cesns.ai/dashboard" className="link">Database</a></button>
-          <button className="button"><a href="https://cedar.cesns.ai/reports-dashboard" className="link">Reports</a></button>
-          <button className="button">Upload</button>
-          <button className="button">Calendar</button>
-          <button className="button">Contact Us</button>
         </div>
+        
       </div>
     </div>
   );

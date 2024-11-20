@@ -106,6 +106,7 @@ body {
   background-color: #212830;
   border-radius: 8px;
   padding: 15px;
+  height:200px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -136,32 +137,33 @@ body {
   text-align: center;
   font-size: 16px;
   margin-bottom: 15px;
+  border-bottom:  2px solid #333;
 }
 
 .inventory span {
   color: #00ffff;
 }
 
-.buttons {
+.button-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; /* This ensures equal spacing between the buttons */
+  align-items: center; /* Centers the buttons vertically if there's more height */
+  gap: 10px; /* Optional: adds a gap between buttons */
+  margin-top: 20px; /* Optional: space from the top */
 }
 
-.buttons button {
-  background-color: #333333;
-  color: #ffffff;
-  border: 1px solid #555;
+.button {
   padding: 10px 20px;
-  margin: 5px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
-  text-transform: uppercase;
-  flex: 1 0 22%; /* 4 buttons per row */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
 }
 
-.buttons button:hover {
-  background-color: #444444;
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
 }
+a{text-decoration: none;color: #ffffff;}
