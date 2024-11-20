@@ -4,7 +4,7 @@ import "./App.css";
 import sub from "./images/sub.png";
 import mainlogo from "./images/mainlogo.png";
 import graph from "./images/graph.png";
-import contact from "./images/contact.jpg";
+import Updategraph from "./images/Updategraph.jpg";
 
 const App = () => {
   const [showImage, setShowImage] = useState(false);
@@ -151,11 +151,11 @@ const App = () => {
       <div className="footer">
         <div className="inventory">
           <h3>
-            AMMONIA INVENTORY: <span>127,342 LBS</span> | LAST UPDATED:{" "}
+            AMMONIA INVENTORY: <span>240 lbs / 740 lbs</span> | LAST UPDATED:{" "}
             <span>05/15/2024</span>
           </h3>
           <div className="logo">
-        <img src={graph} width="100%" alt="Core Refrigeration" className="core-image" />
+        <img src={Updategraph} width="100%" alt="Core Refrigeration" className="core-image" />
         </div>
         </div>
         
