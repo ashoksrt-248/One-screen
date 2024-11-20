@@ -136,7 +136,7 @@ const App = () => {
           </button>
           <button className="button"><a href="https://cedar.cesns.ai/LADConfig"  className="link">Load Analysis</a></button>
           <button className="button"><a href="https://cedar.cesns.ai/dashboard" className="link">Database</a></button>
-          <button className="button">Reports</button>
+          <button className="button"><a href="https://cedar.cesns.ai/reports-dashboard" className="link">Reports</a></button>
           <button className="button">Upload</button>
           <button className="button">Calendar</button>
           <button className="button">Contact Us</button>
