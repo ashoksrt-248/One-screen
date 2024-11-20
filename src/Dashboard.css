@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    background-color: #212830;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .version {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .company-info {
+    text-align: center;
+  }
+  
+  .company-info h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .company-info p {
+    font-size: 14px;
+    color: #aaa;
+    margin: 5px 0 0;
+  }
+  
+  .date-time {
+    text-align: right;
+  }
+  
+  .date-time h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .date-time p {
+    font-size: 14px;
+    color: #aaa;
+    margin: 5px 0 0;
+  }
+  
+  /* Main Content Section */
+  .main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Gauges take 2 parts, Notifications/Deadlines take 1 part */
+    gap: 30px;
+  }
+  
+  /* Gauges Section */
+  .gauges-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  
+  .gauge-item {
+    background-color: #212830;
+    
+   
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .gauge-item h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .gauge-item p {
+    /*margin-top: 10px;*/
+    font-size: 14px;
+  }
+  
+  /* Info Section */
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .notifications, .deadlines {
+    background-color: #212830;
+    border-radius: 8px;
+    padding: 15px;
+    height:200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .notifications h4, .deadlines h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .notifications ul, .deadlines ul {
+    /*list-style-type: none;*/
+    padding: 0;
+  }
+  
+  .notifications ul li, .deadlines ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  /* Footer */
+  .footer {
+    border-top: 2px solid #333;
+    padding-top: 15px;
+    margin-top: 30px;
+  }
+  
+  .inventory {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom:  2px solid #333;
+  }
+  
+  .inventory span {
+    color: #00ffff;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* This ensures equal spacing between the buttons */
+    align-items: center; /* Centers the buttons vertically if there's more height */
+    gap: 10px; /* Optional: adds a gap between buttons */
+    margin-top: 20px; /* Optional: space from the top */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  a{text-decoration: none;color: #ffffff;}
