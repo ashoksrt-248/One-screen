@@ -21,6 +21,7 @@ body {
   border-bottom: 2px solid #333;
   padding-bottom: 15px;
   margin-bottom: 20px;
+  background-color: #ffffff;
 }
 
 .logo h1 {
@@ -40,27 +41,34 @@ body {
 .company-info h2 {
   font-size: 20px;
   margin: 0;
+  color:#2596be;
 }
 
 .company-info p {
   font-size: 14px;
-  color: #aaa;
+  color: #2596be;
   margin: 5px 0 0;
 }
 
 .date-time {
   text-align: right;
+  color: #2596be;
+  display: inline-block;
+  
 }
 
 .date-time h3 {
   font-size: 18px;
-  margin: 0;
+  margin: 10px;
+  display: inline-block;
 }
 
-.date-time p {
+.date-time h6 {
   font-size: 14px;
-  color: #aaa;
+  color: #2596be;
   margin: 5px 0 0;
+  text-align: center;
+  display: inline-block;
 }
 
 /* Main Content Section */
@@ -106,7 +114,7 @@ body {
   background-color: #212830;
   border-radius: 8px;
   padding: 15px;
-  height:200px;
+  height:270px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -124,6 +132,7 @@ body {
 .notifications ul li, .deadlines ul li {
   margin-bottom: 10px;
   font-size: 14px;
+  line-height: 50px;
 }
 
 /* Footer */
@@ -150,20 +159,27 @@ body {
   align-items: center; /* Centers the buttons vertically if there's more height */
   gap: 10px; /* Optional: adds a gap between buttons */
   margin-top: 20px; /* Optional: space from the top */
+  display:flexbox
+  
+  
 }
+.button-container li{list-style: none;display: inline-block;}
 
 .button {
+  display: flex;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #4CAF50; /* Green color */
+  /*background-color: #4CAF50;  Green color */
   color: white;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  /*transition: background-color 0.3s ease;*/
 }
 
 .button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  color: #2596be; /* Darker green on hover */
+}
+
+.button a:hover {
+  color: #2596be; /* Darker green on hover */
 }
 a{text-decoration: none;color: #ffffff;}

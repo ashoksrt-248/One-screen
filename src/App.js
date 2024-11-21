@@ -5,6 +5,7 @@ import sub from "./images/sub.png";
 import mainlogo from "./images/mainlogo.png";
 import graph from "./images/graph.png";
 import Updategraph from "./images/Updategraph.jpg";
+import smith2 from "./images/smith2.png";
 
 const App = () => {
   const [showImage, setShowImage] = useState(false);
@@ -17,31 +18,32 @@ const App = () => {
       {/* Header */}
       <div className="header">
         <div className="logo">
-        <img src={mainlogo} alt="Core Refrigeration" className="core-image" />
+        <img src={mainlogo}  width="300"  alt="Core Refrigeration" className="core-image" />
         </div>
         <div className="company-info">
-          <h2>SMITHFIELD FOODS</h2>
+          <p> <img src={smith2} width="200" alt="Core Refrigeration" className="core-image" /></p>
           <p>410 South Kirk Road,<br/> St. Charles, IL</p>
         </div>
         <div className="date-time">
           <h3>Tue Nov 20th, 2024</h3>
-          <p>07:28 AM</p>
+          <h6>07:28 AM</h6>
         </div>
         <div className="date-time">
-        <img src={sub} alt="Core Refrigeration" className="core-image" />
+        <img src={sub}  alt="Core Refrigeration" className="core-image" />
         </div>
       </div>
       <div  className="button-container">
-          <button className="button">Home</button>
-          <button className="button">
+        <ul>
+          <li className="button">Home</li>
+          <li className="button">
           <a href="https://cedar.cesns.ai/dashboard" className="link">Engineering Drawing</a>
-          </button>
-          <button className="button"><a href="https://cedar.cesns.ai/LADConfig"  className="link">Load Analysis</a></button>
-          <button className="button"><a href="https://cedar.cesns.ai/list-of-overlay/131" className="link">Database</a></button>
-          <button className="button"><a href="https://cedar.cesns.ai/reports-dashboard" className="link">Reports</a></button>
-          <button className="button"><a href="https://cedar.cesns.ai/core-explorer"> Upload</a></button>
-          <button className="button">Calendar</button>
-          <button className="button"><a href="https://coldcoregroup.com/contact/"> Contact Us</a></button>
+          </li>
+          <li className="button"><a href="https://cedar.cesns.ai/LADConfig"  className="link">Load Analysis</a></li>
+          <li className="button"><a href="https://cedar.cesns.ai/list-of-overlay/131" className="link">Database</a></li>
+          <li className="button"><a href="https://cedar.cesns.ai/reports-dashboard" className="link">Reports</a></li>
+          <li className="button"><a href="https://cedar.cesns.ai/core-explorer"> Upload</a></li>
+          <li className="button">Calendar</li>
+          <li className="button"><a href="https://coldcoregroup.com/contact/"> Contact Us</a></li>
           {showImage && (
         <img
           src="/path/to/your/image.png" // Replace with the path to your image
@@ -49,7 +51,9 @@ const App = () => {
           className="contact-image"
         />
       )}
+      </ul>
         </div>
+        <br/>
       {/* Main Content */}
       <div className="main-content">
         
@@ -129,20 +133,20 @@ const App = () => {
         <div className="info-section">
           <div className="notifications">
             <h4><u>NOTIFICATIONS</u></h4>
-            <ol>
+            <ul>
               <li>27 days until NDT Severe items need completed</li>
               <li>MEB/NH3 Calc updates needed for MOC 2024-112</li>
               <li>62 Days until Annual MEB...<br/> See More...</li>
-            </ol>
+            </ul>
           </div>
           <div className="deadlines">
             <h4><u>DEADLINES</u></h4>
-            <ol>
+            <ul>
               <li>ANNUAL MEB REVIEW: 12/1/25</li>
               <li>PSM AUDIT: 2/18/25</li>
               <li>MI INSPECTION: 9/15/25</li>
               <li>NDT INSPECTION: 7/1/28</li>
-            </ol>
+            </ul>
           </div>
         </div>
       </div>
